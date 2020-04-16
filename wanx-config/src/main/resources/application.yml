@@ -1,0 +1,26 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 5
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1             #最好就在这里写上eureka地址
+
+spring:
+  application:
+    name: config-service                      #在eureka上的命名
+  cloud:
+    config:
+      server:
+        git:
+          uri:              #代码托管平台的地址
+          username:                                            #账号
+          password:                                           #密码
+          basedir:       #git的本地仓库
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

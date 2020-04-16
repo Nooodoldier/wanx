@@ -1,16 +1,13 @@
-package com.wanx.item.service;
+package com.wanx.store.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.wanx.bus.pojo.BookBus;
 import com.wanx.common.enums.ExceptionEnum;
 import com.wanx.common.exception.WanxException;
 import com.wanx.common.vo.PageResult;
-import com.wanx.item.mapper.BookBusMapper;
-import com.wanx.item.mapper.BookStoreMapper;
-import com.wanx.item.mapper.BookUserMapper;
-import com.wanx.item.pojo.BookBus;
-import com.wanx.item.pojo.BookStore;
-import com.wanx.item.pojo.BookUser;
+import com.wanx.order.pojo.BookStore;
+import com.wanx.store.mapper.BookStoreMapper;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,7 +27,7 @@ public class BookStoreService {
     @Autowired
     private BookStoreMapper bookStoreMapper;
     @Autowired
-    private BookBusService bookBusService;
+    private BookBusFeignService bookBusFeignService;
 
     public PageResult<BookStore> queryStoreByPageAndSort(
             Integer page, Integer rows, String sortBy, Boolean desc, String key) {
@@ -108,7 +105,7 @@ public class BookStoreService {
         BookBus bookBus = new BookBus();
         bookBus.setBookCount(1);
         bookBus.setBookId(bookStore.getId());
-        int count = bookBusService.addBus(bookBus);
+        int count = bookBusFeignService.addBus(bookBus);
         if(count != 1){
             throw new WanxException(ExceptionEnum.BOOK_BUS_ADD_ERROR);
         }

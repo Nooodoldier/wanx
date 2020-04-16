@@ -12,6 +12,11 @@
         <module>wanx-gateway</module>
         <module>wanx-item</module>
         <module>wanx-common</module>
+        <module>wanx-book-store</module>
+        <module>wanx-book-user</module>
+        <module>wanx-book-bus</module>
+        <module>wanx-book-order</module>
+        <module>wanx-config</module>
     </modules>
     <packaging>pom</packaging>
 

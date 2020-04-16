@@ -2,7 +2,20 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanx-book-bus" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanx-book-bus/wanx-book-bus-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanx-book-bus/wanx-book-bus-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanx-book-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanx-book-order/wanx-book-order-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanx-book-order/wanx-book-order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanx-book-store" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanx-book-store/wanx-book-store-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanx-book-store/wanx-book-store-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanx-book-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanx-book-user/wanx-book-user-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanx-book-user/wanx-book-user-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wanx-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanx-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wanx-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wanx-item" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wanx-item/wanx-item-interface" charset="UTF-8" />
