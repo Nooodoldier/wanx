@@ -1,6 +1,6 @@
 package com.wanx.user.web;
 
-import com.wan.user.pojo.BookUser;
+import com.wanx.common.pojo.BookUser;
 import com.wanx.common.vo.PageResult;
 import com.wanx.user.service.BookUserService;
 import org.springframework.beans.factory.annotation.Autowired;

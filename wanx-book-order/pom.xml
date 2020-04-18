@@ -13,7 +13,6 @@
     <artifactId>wanx-book-order</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>wanx-book-order-interface</module>
         <module>wanx-book-order-service</module>
     </modules>
 

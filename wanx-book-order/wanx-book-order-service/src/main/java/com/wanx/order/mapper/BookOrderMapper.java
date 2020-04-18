@@ -1,6 +1,6 @@
 package com.wanx.order.mapper;
 
-import com.wan.order.pojo.BookOrder;
+import com.wanx.common.pojo.BookOrder;
 import tk.mybatis.mapper.common.Mapper;
 
 /**

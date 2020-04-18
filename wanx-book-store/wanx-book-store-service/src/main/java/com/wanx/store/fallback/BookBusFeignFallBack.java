@@ -1,6 +1,6 @@
 package com.wanx.store.fallback;
 
-import com.wanx.bus.pojo.BookBus;
+import com.wanx.common.pojo.BookBus;
 import com.wanx.store.service.BookBusFeignService;
 import org.springframework.stereotype.Component;
 
@@ -11,8 +11,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class BookBusFeignFallBack implements BookBusFeignService {
     @Override
-    public int addBus(BookBus bookBus) {
-        System.out.print("哦哦哦哦");
+    public int addBusFeign(BookBus bookBus) {
+        System.out.print("" +
+                "========哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦===\n" +
+                "========哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦===\n" +
+                "========哦哦哦哦哦哦哦哦哦哦哦                        哦哦哦哦哦哦哦哦哦哦===\n" +
+                "========哦哦哦哦哦哦哦哦哦哦哦                        哦哦哦哦哦哦哦哦哦哦===\n" +
+                "========哦哦哦哦哦哦哦哦哦哦哦       addBus请求熔断    哦哦哦哦哦哦哦哦哦哦===\n" +
+                "========哦哦哦哦哦哦哦哦哦哦哦                        哦哦哦哦哦哦哦哦哦哦===\n" +
+                "========哦哦哦哦哦哦哦哦哦哦哦                        哦哦哦哦哦哦哦哦哦哦===\n" +
+                "========哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦===\n" +
+                "========哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦===\n");
         return 0;
     }
 }

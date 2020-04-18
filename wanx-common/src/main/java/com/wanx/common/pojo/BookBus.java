@@ -1,6 +1,4 @@
-package com.wanx.bus.pojo;
-
-import com.wanx.order.pojo.BookStore;
+package com.wanx.common.pojo;
 import lombok.Data;
 
 import javax.persistence.*;

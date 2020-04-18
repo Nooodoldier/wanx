@@ -13,7 +13,6 @@
     <artifactId>wanx-book-user</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>wanx-book-user-interface</module>
         <module>wanx-book-user-service</module>
     </modules>
 

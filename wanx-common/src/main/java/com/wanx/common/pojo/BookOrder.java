@@ -1,6 +1,5 @@
-package com.wan.order.pojo;
+package com.wanx.common.pojo;
 
-import com.wanx.bus.pojo.BookBus;
 import lombok.Data;
 
 import javax.persistence.*;

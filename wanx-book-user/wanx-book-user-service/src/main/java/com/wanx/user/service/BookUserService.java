@@ -2,9 +2,9 @@ package com.wanx.user.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.wan.user.pojo.BookUser;
 import com.wanx.common.enums.ExceptionEnum;
 import com.wanx.common.exception.WanxException;
+import com.wanx.common.pojo.BookUser;
 import com.wanx.common.vo.PageResult;
 import com.wanx.user.mapper.BookUserMapper;
 import org.apache.commons.lang3.StringUtils;

@@ -7,6 +7,15 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/wanx-book-bus/wanx-book-bus-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/wanx-book-order/wanx-book-order-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/wanx-book-store/wanx-book-store-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/wanx-book-user/wanx-book-user-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/wanx-item/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

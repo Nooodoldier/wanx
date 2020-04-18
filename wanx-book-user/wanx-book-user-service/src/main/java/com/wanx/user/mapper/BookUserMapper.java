@@ -1,7 +1,7 @@
 package com.wanx.user.mapper;
 
 
-import com.wan.user.pojo.BookUser;
+import com.wanx.common.pojo.BookUser;
 import tk.mybatis.mapper.common.Mapper;
 /**
  * @author hxp

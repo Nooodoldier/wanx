@@ -13,7 +13,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
-@MapperScan("com.wanx.order.mapper")
+@MapperScan("com.wanx.store.mapper")
 public class WanxStoreApplication {
     public static void main(String[] args) {
         SpringApplication.run(WanxStoreApplication.class,args);

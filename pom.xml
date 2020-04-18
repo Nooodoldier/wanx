@@ -10,7 +10,6 @@
     <modules>
         <module>wanx-registry</module>
         <module>wanx-gateway</module>
-        <module>wanx-item</module>
         <module>wanx-common</module>
         <module>wanx-book-store</module>
         <module>wanx-book-user</module>

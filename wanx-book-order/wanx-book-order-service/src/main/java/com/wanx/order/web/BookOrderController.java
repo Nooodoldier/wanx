@@ -1,6 +1,6 @@
 package com.wanx.order.web;
 
-import com.wan.order.pojo.BookOrder;
+import com.wanx.common.pojo.BookOrder;
 import com.wanx.common.vo.PageResult;
 import com.wanx.order.service.BookOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -62,8 +62,8 @@ public class BookOrderController {
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
-    @RequestMapping(value = "addOrder")
-    public void addOrder(BookOrder order){
+    @PostMapping(value = "addOrderFeign")
+    public void addOrderFeign(@RequestBody BookOrder order){
         bookOrderService.addOrder(order);
     }
 }

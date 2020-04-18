@@ -1,4 +1,4 @@
-package com.wanx.item.utils;
+package com.wanx.common.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

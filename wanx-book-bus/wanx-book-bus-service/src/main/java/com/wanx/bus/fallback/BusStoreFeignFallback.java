@@ -1,7 +1,7 @@
 package com.wanx.bus.fallback;
 
 import com.wanx.bus.service.BookStoreFeignService;
-import com.wanx.order.pojo.BookStore;
+import com.wanx.common.pojo.BookStore;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,8 +11,18 @@ import org.springframework.stereotype.Component;
 @Component
 public class BusStoreFeignFallback implements BookStoreFeignService {
     @Override
-    public BookStore getBookStoreById(Long bookId) {
-        System.out.print("啦啦啦啦啦啦啦啦啦");
+    public BookStore getBookStoreByIdFeign(Long bookId) {
+        System.out.print("" +
+                "========啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦======\n"+
+                "========啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦======\n"+
+                "========啦啦啦啦啦啦啦                                 啦啦啦啦啦啦啦======\n"+
+                "========啦啦啦啦啦啦啦                                 啦啦啦啦啦啦啦======\n"+
+                "========啦啦啦啦啦啦啦                                 啦啦啦啦啦啦啦======\n"+
+                "========啦啦啦啦啦啦啦    getBookStoreById请求熔断      啦啦啦啦啦啦啦======\n"+
+                "========啦啦啦啦啦啦啦                                 啦啦啦啦啦啦啦======\n"+
+                "========啦啦啦啦啦啦啦                                 啦啦啦啦啦啦啦======\n"+
+                "========啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦======\n"+
+                "========啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦======\n");
         return new BookStore("000000","繁忙---，请稍后--访问---");
     }
 }

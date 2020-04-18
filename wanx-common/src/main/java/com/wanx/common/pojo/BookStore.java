@@ -1,4 +1,4 @@
-package com.wanx.order.pojo;
+package com.wanx.common.pojo;
 
 import lombok.Data;
 

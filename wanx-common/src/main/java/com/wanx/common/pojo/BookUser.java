@@ -1,4 +1,4 @@
-package com.wan.user.pojo;
+package com.wanx.common.pojo;
 
 import lombok.Data;
 

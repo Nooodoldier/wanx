@@ -2,11 +2,11 @@ package com.wanx.store.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.wanx.bus.pojo.BookBus;
 import com.wanx.common.enums.ExceptionEnum;
 import com.wanx.common.exception.WanxException;
+import com.wanx.common.pojo.BookBus;
+import com.wanx.common.pojo.BookStore;
 import com.wanx.common.vo.PageResult;
-import com.wanx.order.pojo.BookStore;
 import com.wanx.store.mapper.BookStoreMapper;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -105,7 +105,7 @@ public class BookStoreService {
         BookBus bookBus = new BookBus();
         bookBus.setBookCount(1);
         bookBus.setBookId(bookStore.getId());
-        int count = bookBusFeignService.addBus(bookBus);
+        int count = bookBusFeignService.addBusFeign(bookBus);
         if(count != 1){
             throw new WanxException(ExceptionEnum.BOOK_BUS_ADD_ERROR);
         }

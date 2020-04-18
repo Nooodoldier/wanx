@@ -13,7 +13,6 @@
     <artifactId>wanx-book-bus</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>wanx-book-bus-interface</module>
         <module>wanx-book-bus-service</module>
     </modules>
 

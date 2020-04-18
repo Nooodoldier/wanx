@@ -1,7 +1,7 @@
 package com.wanx.bus.web;
 
-import com.wanx.bus.pojo.BookBus;
 import com.wanx.bus.service.BookBusService;
+import com.wanx.common.pojo.BookBus;
 import com.wanx.common.vo.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 
 /**
  * @author hxp
@@ -67,8 +68,14 @@ public class BookBusController {
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 
-    @RequestMapping(value="addBus")
-    public int addBus(BookBus bookBus){
+    @PostMapping(value="addBusFeign")
+    public int addBusFeign(@RequestBody BookBus bookBus){
+        System.out.print("" +
+                "--------feign--调用addBus---\n" +
+                "--------feign--调用addBus---\n" +
+                "--------feign--调用addBus---\n" +
+                "--------feign--调用addBus---\n" +
+                "--------feign--调用addBus---\n");
         return bookBusService.addBus(bookBus);
     }
 }

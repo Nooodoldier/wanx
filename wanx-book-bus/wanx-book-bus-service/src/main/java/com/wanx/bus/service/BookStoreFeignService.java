@@ -1,9 +1,10 @@
 package com.wanx.bus.service;
 
 import com.wanx.bus.fallback.BusStoreFeignFallback;
-import com.wanx.order.pojo.BookStore;
+import com.wanx.common.pojo.BookStore;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author hxp
@@ -12,6 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @FeignClient(value = "store-service",fallback = BusStoreFeignFallback.class)
 public interface BookStoreFeignService {
 
-    @RequestMapping(value = "getBookStoreById")
-    BookStore getBookStoreById(Long bookId);
+    @GetMapping(value = "store/getBookStoreByIdFeign")
+    BookStore getBookStoreByIdFeign(@RequestParam(value = "bookId") Long bookId);
 }

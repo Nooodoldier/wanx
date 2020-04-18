@@ -1,7 +1,7 @@
 package com.wanx.store.web;
 
+import com.wanx.common.pojo.BookStore;
 import com.wanx.common.vo.PageResult;
-import com.wanx.order.pojo.BookStore;
 import com.wanx.store.service.BookStoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -88,8 +88,8 @@ public class BookStoreController {
     }
 
 
-    @RequestMapping(value = "getBookStoreById")
-    public BookStore getBookStoreById(Long bookId){
+    @GetMapping(value = "getBookStoreByIdFeign")
+    public BookStore getBookStoreByIdFeign(Long bookId){
         return bookStoreService.getBookStoreById(bookId);
     }
 

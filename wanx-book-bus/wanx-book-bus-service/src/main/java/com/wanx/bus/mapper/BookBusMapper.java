@@ -1,6 +1,6 @@
 package com.wanx.bus.mapper;
 
-import com.wanx.bus.pojo.BookBus;
+import com.wanx.common.pojo.BookBus;
 import tk.mybatis.mapper.common.Mapper;
 
 /**

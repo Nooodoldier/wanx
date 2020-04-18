@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 8085
 spring:
   application:
     name: bus-service
@@ -33,9 +33,9 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeout-in-milloseconds: 600000
-ribbon.readTimeout: 120000            #设置请求处理的超时时间
-ribbon.ConnectTimeout: 30000        #设置请求链接的超时时间
+            timeout-in-milloseconds: 10000
+ribbon.readTimeout: 5000            #设置请求处理的超时时间
+ribbon.ConnectTimeout: 10000        #设置请求链接的超时时间
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

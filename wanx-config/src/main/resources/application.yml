@@ -7,6 +7,8 @@ eureka:
     prefer-ip-address: true
     ip-address: 127.0.0.1             #最好就在这里写上eureka地址
 
+server:
+  port: 3344
 spring:
   application:
     name: config-service                      #在eureka上的命名
@@ -14,13 +16,6 @@ spring:
     config:
       server:
         git:
-          uri:              #代码托管平台的地址
+          uri:               #代码托管平台的地址
           username:                                            #账号
-          password:                                           #密码
-          basedir:       #git的本地仓库
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+          password:                                            #密码

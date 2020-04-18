@@ -2,7 +2,7 @@ server:
   port: 8083
 spring:
   application:
-    name: order-service
+    name: store-service
   datasource:
     url: jdbc:mysql://localhost:3306/wanx
     username: root
@@ -33,9 +33,12 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeout-in-milloseconds: 600000
-ribbon.readTimeout: 120000            #设置请求处理的超时时间
-ribbon.ConnectTimeout: 30000        #设置请求链接的超时时间
+            timeout-in-milloseconds: 10000
+ribbon.readTimeout: 5000            #设置请求处理的超时时间
+ribbon.ConnectTimeout: 10000
+loggin:
+  level:
+    com.wanx.store.service.BookBusFeignService: debug
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
