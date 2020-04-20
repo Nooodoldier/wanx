@@ -15,7 +15,6 @@
         <module>wanx-book-user</module>
         <module>wanx-book-bus</module>
         <module>wanx-book-order</module>
-        <module>wanx-config</module>
     </modules>
     <packaging>pom</packaging>
 

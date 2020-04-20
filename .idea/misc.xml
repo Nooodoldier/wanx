@@ -13,7 +13,7 @@
         <option value="$PROJECT_DIR$/wanx-book-order/wanx-book-order-interface/pom.xml" />
         <option value="$PROJECT_DIR$/wanx-book-store/wanx-book-store-interface/pom.xml" />
         <option value="$PROJECT_DIR$/wanx-book-user/wanx-book-user-interface/pom.xml" />
-        <option value="$PROJECT_DIR$/wanx-item/pom.xml" />
+        <option value="$PROJECT_DIR$/wanx-config/pom.xml" />
       </set>
     </option>
   </component>
